@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" href="loginstyle.css">
+<script>
+function validate()
+{
+var Email =document.myform.email.value;
+var Pass=document.myform.password.value;
+var regx= /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+)\.([a-zA-Z]{2,8})$/;
+if(!regx.test(Email)){
+document.getElementById("errorem").innerHTML="Please enter valid email";
+document.getElementById("errorem").style.color="red";
+document.getElementById("em").style.borderColor="red";
+return false;
+}
+if(Pass.trim()==""||Pass.length<8){
+document.getElementById("errorps").innerHTML="Please enter valid password";
+ document.getElementById("errorps").style.color="red";
+  document.getElementById("ps").style.borderColor="red";
+  return false;
+}
+}
+</script>
+</head>
+<body style="background-color:rgb(207,159,255)">
+<div id="one">
+<h1 id="tit">Login</h2>
+<form name="myform" onsubmit="return validate()" action="C:\Users\saikiran.pedada\Documents\WebPage.html">
+<table cellspacing=10px>
+<tr>
+<td><b>Email:</b></td><td><input id="em" type="text" name="email" placeholder="enter email"></td> <td><p id="errorem"></p></td>
+</tr>
+<tr>
+<td><b>Password:</b></td><td><input id="ps" type="password" name="password" placeholder="enter password"></td><td><p id="errorps"></p></td>
+</tr>
+<tr>
+<td></td><td><input id="su" type="submit" value="login"></td>
+</tr>
+</table>
+Create account if your not registered <a href="C:\Users\saikiran.pedada\Documents\RegPrac.html">SignUp</a>
+</form>
+</div>
+</body>
+</html>

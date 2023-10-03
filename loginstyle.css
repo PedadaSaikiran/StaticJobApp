@@ -1,0 +1,18 @@
+#one{
+border:2px black solid;
+border-radius:10px;
+background-color:white;
+width:fit-content;
+padding:15px;
+margin:200px auto;
+}
+#tit{
+text-align:center;
+}
+#su{
+	border-radius:10px;
+	width:100px;
+	border:2px solid blue;
+	font-weight:bold;
+	
+}

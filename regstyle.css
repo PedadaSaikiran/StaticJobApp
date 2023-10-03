@@ -1,0 +1,28 @@
+#mn{
+width:fit-content;
+ border:2px black solid;
+ border-radius:15px;
+ padding:20px;
+margin:50px 500px;
+background-color:white;
+}
+#he{
+text-align:center;
+text-decoration:underline;
+}
+#re{
+border-radius:10px;
+margin-left:10px;
+border:2px solid blue;
+font-weight:bold;
+}
+#su{
+	border:2px solid blue;
+border-radius:10px;
+margin-left:200px;
+
+font-weight:bold;
+}
+#bo{
+background-color:rgb(100,100,200);
+}
